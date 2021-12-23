@@ -1,0 +1,25 @@
+.nav {
+  display: inline-flex;
+  align-items: center;
+  height: 74px;
+
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $color-primary;
+    margin: 0 30px;
+
+    &:hover {
+      color: $color-primary-active;
+      border-bottom: 1px solid $color-primary-active;
+    }
+  }
+
+  &__logo svg {
+    fill: $color-primary;
+    height: 50px;
+    width: 50px;
+  }
+}
