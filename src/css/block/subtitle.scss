@@ -1,0 +1,21 @@
+.subtitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+
+    &_size_xs {
+        font-size: 11px;
+    }
+
+    &_size_sm {
+        font-size: 18px;
+    }
+
+    &_size_lg {
+        font-size: 22px;
+    }
+
+    &_size_xl {
+        font-size: 32px;
+    }
+}

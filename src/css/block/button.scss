@@ -1,0 +1,48 @@
+.button {
+    @extend %transition;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 100px;
+    padding: 0 40px;
+    fill: currentColor;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+
+  &:hover {
+        background-color: $color-primary-active;
+    }
+
+    &:focus {
+        box-shadow: 0 0 2px 1px $color-primary-active;
+    }
+
+    &:active {
+        background-color: $color-primary-active;
+        border-color: $color-primary-active;
+    }
+
+    &_type_light {
+        background-color: transparent;
+        color: $color-primary;
+        border: 2px $color-primary solid;
+    }
+}
+
+input.button {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

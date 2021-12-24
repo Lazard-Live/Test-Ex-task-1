@@ -19,15 +19,14 @@ a:not([class]),
 a[class=''] {
     @extend %transition;
     text-decoration: none;
-    color: $color-text;
-    border-bottom: 1px solid currentColor;
+    color: $color-primary;
 
     &:hover,
     &:focus {
-        color: $color-primary;
+        color: $color-white-darker;
     }
 
     &:active {
-        color: $color-primary-active;
+        color: $color-white-darker;
     }
 }

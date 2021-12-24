@@ -1,25 +1,29 @@
 .nav {
   display: inline-flex;
-  align-items: center;
-  height: 74px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
 
   &__link {
-    text-decoration: none;
+    @extend %transition;
+    display: block;
     font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
+    outline: none;
+    padding: 8px 16px;
+    text-decoration: none;
     color: $color-primary;
-    margin: 0 30px;
+    border-bottom: 2px solid transparent;
 
-    &:hover {
-      color: $color-primary-active;
-      border-bottom: 1px solid $color-primary-active;
+    &:hover,
+    &:focus {
+      color: $color-white-darker;
+      border-bottom-color: currentColor;
     }
-  }
 
-  &__logo svg {
-    fill: $color-primary;
-    height: 50px;
-    width: 50px;
+    &:active {
+      color: $color-white-darkest;
+      border-bottom-color: currentColor;
+    }
   }
 }

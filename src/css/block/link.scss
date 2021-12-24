@@ -1,0 +1,8 @@
+.link {
+    @extend a[class=''];
+
+  &_white {
+    color: $color-white;
+    border-bottom: 1px solid currentColor;
+  }
+}
