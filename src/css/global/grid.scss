@@ -1,5 +1,4 @@
-$gap-sm: 12px;
-$gap-md: 16px;
+$gap: 12px;
 $columns: 12;
 
 .container {
@@ -9,12 +8,12 @@ $columns: 12;
 .container,
 .container-fluid {
     width: 100%;
-    padding: 0 $gap-md;
+    padding: 0 $gap;
     position: relative;
 }
 
 .row {
-    margin: (-$gap-md * 2) (-$gap-md) 0;
+    margin: (-$gap) (-$gap) 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -25,8 +24,7 @@ $columns: 12;
 
 [class|='col'] {
     width: 100%;
-    margin-top: $gap-md * 2;
-    padding: 0 $gap-md;
+    margin-top: $gap * 2;
 }
 
 .col {

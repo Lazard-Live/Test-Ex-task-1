@@ -10,32 +10,113 @@
         <header>
             <div class="section section_furst">
                 <div class="container">
-                    <div class="raw">
-                        <div class="col">
-                            <div class="nav">
-                                <a href="#" class="nav__logo">
-                                    <svg>
-                                        <use xlink:href="images/sprite.svg#logo"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="nav__link"> Продукты </a>
-                                <a href="#" class="nav__link"> Рекомендации </a>
-                                <a href="#" class="nav__link"> Новинки </a>
-                                <a href="#" class="nav__link"> Мир Nivea </a>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="logo">
+                                <svg class="logo__svg">
+                                    <use xlink:href="images/sprite.svg#logo"></use>
+                                </svg>
                             </div>
                         </div>
+                        <div class="col-auto">
+                            <ul class="nav">
+                                <li><a href="#" class="nav__link"> Продукты </a></li>
+                                <li><a href="#" class="nav__link"> Рекомендации </a></li>
+                                <li><a href="#" class="nav__link"> Новинки </a></li>
+                                <li><a href="#" class="nav__link"> Мир Nivea </a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav_link">
+                                        @include('./blocks/icon.html', {name: 'search',classes: 'nav__icon'})
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav_link">
+                                        @include('./blocks/icon.html', {name: 'search',classes: 'nav__icon'})
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav_link">
+                                        @include('./blocks/icon.html', {name: 'search',classes: 'nav__icon'})
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav nav_line">
-                        <div class="nav_link">1</div>
-                        <div class="nav_link">2</div>
-                        <div class="nav_link">3</div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav">
+                                <a href="#">Продукты</a>
+                                <div class="nav__icon">@include('./blocks/icon.html', { name: 'arrow' })</div>
+                                <div class="nav__link">3</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <div class="section promo" style="background-image: url('images/promo-head/promo-hero.jpg')"></div>
+            <div class="section section_furst">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="nav nav_stock">
+                                <li><a href="#" class="nav__link">Как принять участие</a></li>
+                                <li><a href="#" class="nav__link">Правила</a></li>
+                                <li><a href="#" class="nav__link">Призы</a></li>
+                                <li><a href="#" class="nav__link">Как сфотографировать чек</a></li>
+                                <li><a href="#" class="nav__link">Вопросы</a></li>
+                                <li><a href="#" class="nav__link">Чат-бот</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section promo" style="background-image: url('@webRoot/images/promo-head/promo-hero.jpg')">
+                <div class="container"></div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="title">Увлажняем кожу с помощью крема для лица Care</div>
+                </div>
+            </div>
+
+            <div class="section" style="background: lightgray">
+                <div class="container">
+                    <div class="title title_size_xl">Забота и комфорт в одной баночке</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="title subtitle_size_lg">Бережное очищение без сухости кожи</div>
+                </div>
+            </div>
+
+
+          <div class="section">
+            <div class="container">
+              <div class="subtitle">Результат</div>
+
+          </div>
+          <div class="section" style="background: lightgray">
+            <div class="container container-fluid">
+              <div class="title title_size_xl">Забота и комфорт в одной баночке</div>
+            </div>
+          </div>
+          </div>
+
+          <div class="section">
+            <div class="container">
+              <div class="title subtitle_size_lg">Продукт</div>
+            </div>
+          </div>
         </main>
-        <footer style="background-color: #06369D">Подвал</footer>
+        <footer style="background-color: #06369d">Подвал</footer>
     </body>
 </html>

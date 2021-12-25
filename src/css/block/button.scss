@@ -21,16 +21,16 @@
     border: none;
 
   &:hover {
-        background-color: $color-primary-active;
+        background-color: $color-primary-active-white;
     }
 
     &:focus {
-        box-shadow: 0 0 2px 1px $color-primary-active;
+        box-shadow: 0 0 2px 1px $color-primary-active-white;
     }
 
     &:active {
-        background-color: $color-primary-active;
-        border-color: $color-primary-active;
+        background-color: $color-primary-active-white;
+        border-color: $color-primary-active-white;
     }
 
     &_type_light {

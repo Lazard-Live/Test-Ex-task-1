@@ -1,7 +1,7 @@
 .section {
     padding: 100px 118px;
     background: no-repeat center / cover;
-    background-position: 0 -110px;
+    overflow: hidden;
 
     &_furst {
       padding: 0 118px;

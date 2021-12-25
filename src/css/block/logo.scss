@@ -1,0 +1,10 @@
+.logo {
+  display: flex;
+  position: center;
+  padding-right: 36px;
+  &__svg {
+        fill: $color-primary;
+        height: 50px;
+        width: 50px;
+  }
+}
