@@ -8,15 +8,16 @@
     justify-content: flex-start;
 
     &__link {
+        position: relative;
         @extend %transition;
         display: block;
         font-size: 18px;
         outline: none;
         margin: 8px 16px;
         text-decoration: none;
-        color: $color-primary;
         transition-property: border-bottom;
         border-bottom: 2px solid transparent;
+        color: $color-primary;
 
         &:first-child {
             margin-left: 0;
@@ -33,13 +34,32 @@
 
     &_stock {
         display: flex;
-        justify-content: space-between;
-        height: 36px;
+        padding-bottom: 1px;
+
+        &__bottom {
+            border: 1px solid $color-white-line;
+            border-right: none;
+            width: 100%;
+            background-color: $color-white;
+
+            &:first-child {
+                border-radius: 5px 0 0 5px;
+            }
+
+            &:last-child {
+                border-right: 1px solid $color-gray;
+                border-radius: 0 5px 5px 0;
+            }
+        }
 
         .nav__link {
             text-transform: none;
             font-size: 14px;
+            margin: 8px 0;
+            padding: 0 41px;
             border-bottom: none;
+            white-space: nowrap;
+            text-align: center;
         }
     }
 }
