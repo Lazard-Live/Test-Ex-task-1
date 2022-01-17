@@ -7,40 +7,78 @@
     align-items: center;
     justify-content: flex-start;
 
+    &__button {
+        padding: 16px 10px 28px;
+        line-height: 1;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
     &__link {
         position: relative;
-        @extend %transition;
-        display: block;
+        content: attr(title);
+        display: inline-block;
         font-size: 18px;
-        outline: none;
-        margin: 8px 16px;
-        text-decoration: none;
-        transition-property: border-bottom;
-        border-bottom: 2px solid transparent;
         color: $color-primary;
+        text-decoration: none;
+        white-space: nowrap;
 
-        &:first-child {
-            margin-left: 0;
+        &::before {
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: $color-primary-active-dark;
+            top: 20px;
+            left: 0;
+            visibility: hidden;
         }
 
-        &:hover,
-        &:focus,
-        &:active {
-            font-weight: 800;
+        &::after {
+            position: absolute;
+            content: attr(title);
+            top: 0;
+            left: 0;
+            font-weight: 700;
             color: $color-primary-active-dark;
-            border-bottom-color: currentColor;
+            visibility: hidden;
+            white-space: nowrap;
+        }
+
+        &:hover {
+            visibility: hidden;
+
+            &::after {
+                visibility: visible;
+            }
+
+            .nav__header-first &::before {
+                visibility: visible;
+            }
+        }
+    }
+
+    &_header-second {
+        .nav__button {
+            display: inline-block;
+            position: relative;
+            padding: 16px 4px 10px;
+        }
+
+        .link {
+          height: 14px;
         }
     }
 
     &_stock {
-        display: flex;
         padding-bottom: 1px;
+        justify-content: center;
 
-        &__bottom {
+        &__button {
             border: 1px solid $color-white-line;
             border-right: none;
-            width: 100%;
             background-color: $color-white;
+            padding: 0 41px;
 
             &:first-child {
                 border-radius: 5px 0 0 5px;
@@ -56,10 +94,7 @@
             text-transform: none;
             font-size: 14px;
             margin: 8px 0;
-            padding: 0 41px;
-            border-bottom: none;
-            white-space: nowrap;
-            text-align: center;
+            color: $color-primary;
         }
     }
 }
