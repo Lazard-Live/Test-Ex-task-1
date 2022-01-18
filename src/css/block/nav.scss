@@ -38,7 +38,7 @@
             position: absolute;
             content: attr(title);
             top: 0;
-            left: 0;
+            left: -1px;
             font-weight: 700;
             color: $color-primary-active-dark;
             visibility: hidden;
@@ -62,11 +62,20 @@
         .nav__button {
             display: inline-block;
             position: relative;
-            padding: 16px 4px 10px;
+            text-transform: none;
+            padding: 8px 4px 6px;
+
+          &:last-child {
+            .link__arrow {
+              &::after {
+                display: none;
+              }
+            }
+          }
         }
 
         .link {
-          height: 14px;
+            height: 14px;
         }
     }
 
@@ -75,6 +84,7 @@
         justify-content: center;
 
         &__button {
+            display: inline-block;
             border: 1px solid $color-white-line;
             border-right: none;
             background-color: $color-white;
