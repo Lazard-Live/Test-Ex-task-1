@@ -11,6 +11,8 @@ $color-white-darkest: darken($color-white, 30%);
 $color-black: #000;
 $color-white-line: #EFF5FA;
 $color-gray-line: #D6DCEC;
+$color-circle-1: #A7E7FF;
+$color-circle-2: rgba(191, 232, 248, 0.5);
 
 %transition {
     transition: 0.4s ease;

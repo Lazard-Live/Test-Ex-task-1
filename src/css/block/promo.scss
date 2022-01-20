@@ -1,22 +1,72 @@
 .promo {
     content: '';
-    display: flex;
-    align-items: center;
-    height: 650px;
     position: relative;
+    display: block;
+    align-items: center;
+    height: 620px;
     background-size: 120%;
     background-position: center -138px;
 
-  &__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    width: 501px;
-    height: 275px;
-    left: 586px;
-    color: $color-primary;
-    background-color: $color-white;
-    text-align: center;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 501px;
+        height: 275px;
+        left: 604px;
+        top: 82px;
+        color: $color-primary;
+        background-color: $color-white;
+        text-align: center;
+    }
+
+    &__circle {
+        background: radial-gradient(50% 50% at 50% 50%, $color-circle-1 0%, $color-circle-2 100%);
+        content: '';
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        opacity: 0.75;
+        border: 2px solid #8997bb;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        /* Позиционирвоание потом убрать!!*/
+        &_ellipse-1 {
+            left: 136px;
+            top: 0;
+            transform: rotate(-15deg);
+          width: 162.22px;
+          height: 162.22px;
+        }
+
+        &_ellipse-2 {
+            left: 112px;
+            top: 210px;
+            transform: rotate(-30deg);
+          width: 183.98px;
+          height: 183.98px;
+        }
+    }
+
+  &__img-1 {
+    position: absolute;
+    width: 157.12px;
+    height: 121.33px;
+    left: 144px;
+    top: 20px;
+    transform: rotate(15deg);
+  }
+
+  &__img-2 {
+    position: absolute;
+    left: 156px;
+    top: 190px;
+
+    width: 84.92px;
+    height: 218.06px;
+    transform: rotate(-15deg);
   }
 }
