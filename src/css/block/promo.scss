@@ -6,4 +6,17 @@
     position: relative;
     background-size: 120%;
     background-position: center -138px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 501px;
+    height: 275px;
+    left: 586px;
+    color: $color-primary;
+    background-color: $color-white;
+    text-align: center;
+  }
 }

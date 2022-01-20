@@ -55,6 +55,10 @@ $color-line: #ddd;
         margin: 0 auto 20px;
     }
 
+    &__line-header {
+        border-bottom: 1px solid $color-gray-line;
+    }
+
     &__subtitle {
         text-transform: capitalize;
         margin-bottom: 48px;
@@ -70,5 +74,10 @@ $color-line: #ddd;
 
     &__row-about {
         margin-bottom: 68px;
+    }
+
+    &__header-second {
+        margin-top: 0;
+        margin-bottom: -10px;
     }
 }
