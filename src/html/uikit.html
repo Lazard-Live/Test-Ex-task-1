@@ -130,6 +130,22 @@
                     </div>
                 </div>
 
+                <!--  "Checkbox" -->
+                <div class="block root__block">
+                    <div class="block__name">Иконки (спрайт)</div>
+
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <div class="checkbox" style="margin-left: 0">
+                                @include('./blocks/icon.html', { name: 'check', classes: 'checkbox__icon' })
+                                <span class="checkbox__text"
+                                    >Быстро впитывается – никакого липкого слоя и жирного блеска
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Лого-->
                 <div class="block root__block">
                     <div class="block__name">Лого</div>
@@ -205,14 +221,24 @@
                     <div class="block__body">
                         <div class="block__item block__item_wide">
                             <ul class="nav nav_stock">
-                                <li class="nav_stock__button"><a href="#" class="nav__link" title="Как принять участие">Как принять участие</a></li>
-                                <li class="nav_stock__button"><a href="#" class="nav__link" title="Правила">Правила</a></li>
+                                <li class="nav_stock__button">
+                                    <a href="#" class="nav__link" title="Как принять участие">Как принять участие</a>
+                                </li>
+                                <li class="nav_stock__button">
+                                    <a href="#" class="nav__link" title="Правила">Правила</a>
+                                </li>
                                 <li class="nav_stock__button"><a href="#" class="nav__link" title="Призы">Призы</a></li>
                                 <li class="nav_stock__button">
-                                    <a href="#" class="nav__link" title="Как сфотографировать чек">Как сфотографировать чек</a>
+                                    <a href="#" class="nav__link" title="Как сфотографировать чек"
+                                        >Как сфотографировать чек</a
+                                    >
                                 </li>
-                                <li class="nav_stock__button"><a href="#" class="nav__link" title="Вопросы">Вопросы</a></li>
-                                <li class="nav_stock__button"><a href="#" class="nav__link" title="Чат-бот">Чат-бот</a></li>
+                                <li class="nav_stock__button">
+                                    <a href="#" class="nav__link" title="Вопросы">Вопросы</a>
+                                </li>
+                                <li class="nav_stock__button">
+                                    <a href="#" class="nav__link" title="Чат-бот">Чат-бот</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -220,18 +246,24 @@
 
                 <!-- Меню навигации -->
                 <div class="block root__block">
-                <div class="block__name">Меню навигации</div>
+                    <div class="block__name">Меню навигации</div>
 
-                <div class="block__body">
-                  <div class="block__item block__item_wide">
-                    <ul class="nav nav_header-second">
-                      <li class="nav__button"><a href="#" class="link"><div class="link__arrow-icon">@include('./blocks/icon.html', { name: 'home' })</div></a></li>
-                      <li class="nav__button"><a href="#" class="link link__arrow">Акция</a></li>
-                      <li class="nav__button"><a href="#" class="link link__arrow">CARE MAX</a></li>
-                    </ul>
-                  </div>
+                    <div class="block__body">
+                        <div class="block__item block__item_wide">
+                            <ul class="nav nav_header-second">
+                                <li class="nav__button">
+                                    <a href="#" class="link"
+                                        ><div class="link__arrow-icon">
+                                            @include('./blocks/icon.html', { name: 'home' })
+                                        </div></a
+                                    >
+                                </li>
+                                <li class="nav__button"><a href="#" class="link link__arrow">Акция</a></li>
+                                <li class="nav__button"><a href="#" class="link link__arrow">CARE MAX</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
 
                 <!-- Ссылка -->
                 <div class="block root__block">

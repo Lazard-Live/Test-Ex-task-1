@@ -72,6 +72,12 @@ $color-line: #ddd;
         }
     }
 
+    &__row-content-center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     &__row-about {
         margin-bottom: 68px;
     }
@@ -79,5 +85,19 @@ $color-line: #ddd;
     &__header-second {
         margin-top: 0;
         margin-bottom: -10px;
+    }
+
+    &__image-1 {
+        width: 329px;
+        height: 248px;
+    }
+
+    &__frame {
+        content: '';
+        position: absolute;
+        width: 405px;
+        height: 250px;
+
+        background: linear-gradient(180deg, #e61c8a 0%, #ffbfe1 100%);
     }
 }
